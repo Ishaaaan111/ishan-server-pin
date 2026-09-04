@@ -1,0 +1,195 @@
+{
+  "version": "1.0.0",
+  "name": "pinterest-widgets",
+  "description": "Interactive Pinterest UI widgets for NitroStack MCP Server",
+  "widgets": [
+    {
+      "uri": "/pin-search-results",
+      "name": "Pinterest Explorer & Search",
+      "description": "Interactive Pinterest discovery feed, live keyword search, category pills, OAuth login/signup, and pin saving",
+      "examples": [
+        {
+          "name": "Trending Ideas Discovery Feed",
+          "description": "Balanced multi-category Pinterest feed across interior design, nature, art, food, fashion, and cars",
+          "data": {
+            "query": "Popular Ideas",
+            "authenticated": false,
+            "auth_url": "http://localhost:3005/auth",
+            "total": 6,
+            "pins": [
+              {
+                "id": "900301",
+                "title": "Minimalist Scandinavian Living Room",
+                "description": "Bright and airy living room featuring neutral linen sectional and blonde oak coffee table.",
+                "image_url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900301",
+                "author": "Nordic Spaces",
+                "likes": 4890,
+                "tag": "Interior"
+              },
+              {
+                "id": "900401",
+                "title": "Alpine Emerald Lake & Pine Reflections",
+                "description": "Crystal clear emerald glacier lake mirroring rugged snow-capped mountain peaks at dawn.",
+                "image_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900401",
+                "author": "Wanderlust Vista",
+                "likes": 5420,
+                "tag": "Nature"
+              },
+              {
+                "id": "900701",
+                "title": "Dreamy Abstract Pastel Gradient Art",
+                "description": "Fluid ethereal gradients in coral, lilac, and soft butter yellow creating a calming ambient mood.",
+                "image_url": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900701",
+                "author": "Studio Chromatic",
+                "likes": 5210,
+                "tag": "Art"
+              },
+              {
+                "id": "900501",
+                "title": "Artisan Latte Art in Ceramic Cup",
+                "description": "Freshly brewed velvety flat white with intricate rosetta latte art on warm rustic wood.",
+                "image_url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900501",
+                "author": "Daily Brew",
+                "likes": 2190,
+                "tag": "Food"
+              },
+              {
+                "id": "900801",
+                "title": "Autumn Capsule Wardrobe & Wool Trench Coat",
+                "description": "Timeless camel wool coat paired with cream cashmere knitwear and tailored trousers.",
+                "image_url": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900801",
+                "author": "Style Minimal",
+                "likes": 3890,
+                "tag": "Fashion"
+              },
+              {
+                "id": "900101",
+                "title": "Golden Retriever Puppy in Autumn Leaves",
+                "description": "Adorable golden retriever puppy playing outdoors in crisp golden autumn leaves.",
+                "image_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900101",
+                "author": "Canine Inspirations",
+                "likes: 1840,
+                "tag": "Dogs"
+              }
+            ],
+            "categories": [
+              "✨ Popular Ideas",
+              "🛋️ Interior Design",
+              "🌿 Nature & Travel",
+              "🎨 Art & Design",
+              "☕ Coffee & Food",
+              "👗 Fashion & Style",
+              "🐶 Dogs & Pets",
+              "🚗 Automotive"
+            ],
+            "message": "Showing 6 Pinterest pins for \"Popular Ideas\""
+          }
+        }
+      ]
+    },
+    {
+      "uri": "/pinterest-app",
+      "name": "Pinterest Full App",
+      "description": "Full interactive Pinterest application widget with real-time search, category discovery, login, signup, and masonry view",
+      "examples": [
+        {
+          "name": "Default Explorer Feed",
+          "description": "Trending Pinterest ideas across design, travel, pets, and food",
+          "data": {
+            "query": "Popular Ideas",
+            "authenticated": true,
+            "total": 12,
+            "pins": [
+              {
+                "id": "900301",
+                "title": "Minimalist Scandinavian Living Room",
+                "description": "Bright and airy living room featuring neutral linen sectional and blonde oak coffee table.",
+                "image_url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/pin/900301",
+                "author": "Nordic Spaces",
+                "likes": 4890,
+                "tag": "Interior Design"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "uri": "/board-list",
+      "name": "Pinterest Boards",
+      "description": "Grid of the authenticated user's Pinterest boards with cover images, pin counts, privacy status, and browse actions",
+      "examples": [
+        {
+          "name": "User Boards",
+          "description": "List of user boards with cover photos and follower counts",
+          "data": {
+            "boards": [
+              {
+                "id": "112233445566778899",
+                "name": "Dream Architecture & Homes",
+                "description": "Modern villas, warm minimalist interiors, and cozy terraces",
+                "privacy": "PUBLIC",
+                "pin_count": 28,
+                "follower_count": 142,
+                "cover_image_url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop",
+                "pinterest_url": "https://www.pinterest.com/board/112233445566778899"
+              }
+            ],
+            "total": 1,
+            "has_more": false
+          }
+        }
+      ]
+    },
+    {
+      "uri": "/pin-details",
+      "name": "Pinterest Pin Details",
+      "description": "Detailed view of an individual Pinterest pin with image preview, link copying, and follow-up prompts",
+      "examples": [
+        {
+          "name": "Pin View",
+          "description": "Single Pin inspected",
+          "data": {
+            "id": "900101",
+            "title": "Golden Retriever Puppy in Autumn Leaves",
+            "description": "Adorable golden retriever puppy playing outdoors in crisp golden autumn leaves.",
+            "image_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&auto=format&fit=crop",
+            "pinterest_url": "https://www.pinterest.com/pin/900101"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "/user-profile",
+      "name": "Pinterest User Profile",
+      "description": "User profile dashboard with avatar, stats, bio, board and pin counts, and growth recommendations",
+      "examples": [
+        {
+          "name": "Profile View",
+          "description": "User profile metrics and stats",
+          "data": {
+            "username": "aesthetic_creator",
+            "business_name": "Studio Aesthetic",
+            "about": "Curating modern interior inspiration, photography, and canine joy.",
+            "account_type": "BUSINESS",
+            "profile_image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop",
+            "website_url": "https://example.com",
+            "board_count": 12,
+            "pin_count": 348,
+            "follower_count": 1250,
+            "following_count": 280,
+            "monthly_views": 45000,
+            "pinterest_url": "https://www.pinterest.com/aesthetic_creator"
+          }
+        }
+      ]
+    }
+  ]
+}
